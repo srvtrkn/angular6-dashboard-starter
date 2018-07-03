@@ -1,0 +1,16 @@
+<div *ngIf="isVisible" class="modal fade show in danger" id="myModal" role="dialog">
+    <div class="modal-dialog">  
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" (click)="hideExitPopUp()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>{{msg}}</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" (click)="logout()">OK</button>
+                <button type="button" class="btn btn-default" (click)="hideExitPopUp()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

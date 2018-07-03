@@ -1,0 +1,9 @@
+.nav-link {
+  color: #40476d !important;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: whitesmoke !important;
+  background-color: #23395b !important;
+  cursor: pointer;
+}
