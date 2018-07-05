@@ -13,7 +13,8 @@ export class AuthService {
   login(user) {
     let u = {
       isAuth: true,
-      userName: user.name
+      userName: user.name,
+      role: user.role
     };
 
     localStorage.setItem("auth", JSON.stringify(u));
@@ -27,7 +28,7 @@ export class AuthService {
     let user = JSON.parse(localStorage.getItem("auth"));
     return !user ? [] : user;
   }
-  logout(){
+  logout() {
     localStorage.removeItem("auth");
   }
 }

@@ -9,7 +9,8 @@ import { FormsModule } from "@angular/forms";
 import { AuthService } from "./auth.service";
 import { AuthGuard } from "./auth.guard";
 import { LoginComponent } from "./login/login.component";
-import { PopUpComponent} from "./popUp/popUp.component"
+import { PopUpComponent } from "./popUp/popUp.component";
+import { AngularFontAwesomeModule } from "angular-font-awesome";
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent, canActivate: [AuthGuard] },
@@ -26,7 +27,12 @@ const routes: Routes = [
     LoginComponent,
     PopUpComponent
   ],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(routes),
+    AngularFontAwesomeModule
+  ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })

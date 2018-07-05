@@ -15,7 +15,11 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
   login() {
     if (this.name !== "") {
-      this.auth.login({ name: this.name, pass: this.password });
+      this.auth.login({
+        name: this.name,
+        pass: this.password,
+        role: this.name === "admin" ? "admin" : "user"
+      });
       this.router.navigate(["home"]);
     } else {
       alert("Name is required!!!");

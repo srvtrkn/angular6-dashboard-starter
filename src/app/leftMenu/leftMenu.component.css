@@ -7,3 +7,7 @@
   background-color: #23395b !important;
   cursor: pointer;
 }
+fa {
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 1.5em;
+}
