@@ -77,11 +77,14 @@ body {
 
   .row > .sidebar.collapsing {
     display: flex !important;
-    margin-left: -10% !important;
+    /*margin-left: -10% !important;*/
     transition: all 0.3s linear !important;
     position: fixed;
     z-index: 1050;
     min-width: initial;
+  }
+  .row.collapse.show {
+    margin-left: 0 !important;
   }
 }
 .menuIcon {
