@@ -11,3 +11,7 @@ fa {
   text-shadow: 1px 1px 1px #ccc;
   font-size: 1.5em;
 }
+ul li {
+  font-size: 14px;
+  font-weight: 400;
+}

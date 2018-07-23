@@ -2,17 +2,21 @@ body {
   height: 100vh;
   overflow-x: hidden;
   padding-top: 55px;
+  background: #F9F9FB;
 }
 
 .w-sidebar {
   width: 200px;
   max-width: 200px;
+  
 }
 
 .vh-100 {
-  min-height: 100vh;
+  min-height: auto;
 }
-
+.h-100 {
+  height: auto!important;
+}
 .row.collapse {
   margin-left: -200px;
   left: 0;
@@ -20,7 +24,7 @@ body {
 }
 
 .row.collapse.show {
-  margin-left: 0 !important;
+  margin-left: 20px !important;
 }
 
 .row.collapsing {
@@ -41,6 +45,8 @@ body {
 }
 .bg-light {
   background-color: #dfe7ea !important;
+  border-radius: 5px;
+  top: 11vh;
 }
 
 @media (max-width: 768px) {
@@ -80,6 +86,7 @@ body {
 }
 .menuIcon {
   color: whitesmoke;
+  font-size: 20px;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
